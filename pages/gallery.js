@@ -5,6 +5,8 @@ import CustomSelect from '../components/CustomSelect';
 import CustomViewer from '../components/CustomViewer';
 import styles from '../styles/Gallery.module.css';
 import { useRouter } from 'next/router';
+import LinesSVG from '../components/LinesSVG';
+import LinesMobileSVG from '../components/LinesMobileSVG';
 
 export default function Gallery() {
   const [dimensions, setDimensions] = useState({
@@ -432,13 +434,23 @@ export default function Gallery() {
                 </div>
               )}
             </div>
-            <img
+            {/*<img
               width={'100%'}
               height={600}
               src={'/lines_mobile.svg'}
               alt={''}
               style={{ position: 'absolute', zIndex: -2 }}
-            />
+            />*/}
+            <div
+              style={{
+                position: 'absolute',
+                zIndex: -1,
+                width: '100%',
+                height: '100%',
+              }}
+            >
+              <LinesMobileSVG />
+            </div>
           </div>
         ) : (
           <div
@@ -780,13 +792,23 @@ export default function Gallery() {
                 </div>
               )}
             </div>
-            <img
+            {/*<img
               width={'100%'}
               height={'100%'}
               src={'/lines_new.svg'}
               alt={''}
               style={{ position: 'absolute', zIndex: -1 }}
-            />
+            />*/}
+            <div
+              style={{
+                position: 'absolute',
+                zIndex: -1,
+                width: '100%',
+                height: '100%',
+              }}
+            >
+              <LinesSVG />
+            </div>
           </div>
         )}
       </div>
