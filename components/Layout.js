@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useState, useEffect, useContext } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -108,7 +109,7 @@ function Layout({ children }) {
                 }}
               >
                 {city === 'THE WORLD' ? (
-                  <img
+                  <Image
                     className={stylesLayout['logo-cryptomurals']}
                     width={'100%'}
                     height={100}

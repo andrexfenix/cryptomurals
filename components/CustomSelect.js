@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useState } from 'react';
 import style from '../styles/CustomSelect.module.css';
 import stylesLayout from '../styles/Layout.module.css';
@@ -46,6 +47,7 @@ function CustomSelect({ options, option, selectOption }) {
           {options.map((optionNext) => {
             return (
               <div
+                key={optionNext}
                 style={{ fontFamily: 'Monoton' }}
                 className={stylesLayout['circle-select']}
                 onClick={() => {

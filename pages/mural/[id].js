@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import React, { useState, useEffect, useContext } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';

@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-key */
 import React, { useState, useContext } from 'react';
+import Image from 'next/image';
 import Layout from '../components/Layout';
 import CustomSelect from '../components/CustomSelect';
 import stylesLayout from '../styles/Layout.module.css';
@@ -132,7 +133,7 @@ export default function Home() {
 
       <div className={stylesLayout['container-icon-social-networks']}>
         <div>
-          <img
+          <Image
             width={48}
             height={48}
             color="white"
@@ -140,7 +141,7 @@ export default function Home() {
             style={{ margin: 10, left: 0 }}
             className={stylesLayout['icon-social-networks']}
           />
-          <img
+          <Image
             width={48}
             height={48}
             color="white"
@@ -148,7 +149,7 @@ export default function Home() {
             style={{ margin: 10, left: 58 }}
             className={stylesLayout['icon-social-networks']}
           />
-          <img
+          <Image
             width={48}
             height={48}
             color="white"
@@ -156,7 +157,7 @@ export default function Home() {
             style={{ margin: 10, left: 116 }}
             className={stylesLayout['icon-social-networks']}
           />
-          <img
+          <Image
             width={48}
             height={48}
             color="white"

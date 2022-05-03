@@ -63,10 +63,6 @@ export default function Gallery() {
           display: 'flex',
           flex: 1,
           width: '100%',
-          //backgroundImage: 'url(/lines_new.svg)',
-          //backgroundRepeatX: 'no-repeat',
-          //backgroundRepeatY: 'no-repeat',
-          //backgroundSize: '1650px 700px',
         }}
         onClick={(e) => unselect(e)}
       >

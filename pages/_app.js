@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import '../styles/globals.css';
 import { ConnectProvider } from '../context/connectContext';
 import { CityProvider } from '../context/CityContext';
